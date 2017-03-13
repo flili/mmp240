@@ -1,0 +1,69 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+.container{
+    border: 1px solid #000;
+    width: 1200px;
+    margin: 50px auto;
+}
+header, nav, .main-content, .aside, footer{
+    border: 1px solid #00ff00;
+    margin: 5px 10px;
+}
+header, nav{ 
+    margin-top: 10px;
+}
+/*selecting the child list items inside of the nav tag*/
+nav li {
+    color: purple;
+    display: inline;
+    padding-right: 20px;
+}
+li{
+    list-style: none;
+}
+a:link{
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited{
+    color: #ccc;
+}
+.main-content{
+    width: 800px;
+    float: left;
+}
+.aside{
+    width: 366px;
+    float: left;
+    margin-left: 0;
+}
+footer{
+    clear: both;
+}
+h1, h2, h3, p, span{
+    padding: 20px 40px;
+}
+h1{
+    padding-bottom: 0;
+}
+h2{
+    padding-top: 0;
+}
+footer p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.main-content hr{
+    width: 720px;
+}
+.aside hr{
+    width: 286px;
+}
+.aside h3, .aside li{
+    text-align: right;
+}
+.aside li{
+    padding-right: 40px;
+}

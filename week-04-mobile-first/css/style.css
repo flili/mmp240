@@ -1,0 +1,120 @@
+/*@font-face {
+    font-family: "AbrilFatface-Regular";
+    src: url("../fonts/Abril_Fatface/AbrilFatface-Regular.ttf");
+}*/
+body{
+    font-family: 'Roboto', sans-serif; 
+    /* background-color: #ccc;*/
+    font-size:18px;
+    margin:0;
+    padding:0;
+}
+h1{
+    
+    font-size: 1.75em;/*31.5px*/
+    font-family: 'Abril Fatface', cursive;
+}
+/* em is a unit of measure that is proportional to 
+the base dimension for text */
+
+ul.top-nav {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #525252;
+}
+ul.top-nav li{
+    float:left;
+    margin:0 2.5% 0 5%;
+}
+ul.top-nav li.icon {
+    display: none;
+}
+
+@media only screen and (max-width: 680px) {
+    ul.top-nav li{
+        display: none;
+    }
+    ul.top-nav li.icon {
+        display: inline-block;
+        float: right;
+    }
+}
+@media only screen and (max-width: 680px) {
+    ul.top-nav.responsive {
+        position:relative;
+    }
+    ul.top-nav.responsive li.icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    ul.top-nav.responsive li{
+        float:none;
+        display: inline;
+    }
+    ul.top-nav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+}
+@font-face{
+    font-family: 'Marchand de Venise';
+    src: url('../font/marchand_de_venise/Marchand_de_Venise.ttf');
+}
+    h1{
+        font-family: 'Pacifico', cursive;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries change background color */
+/*
+@media only screen and (min-width: 320px){
+    body{
+        background-color: #ffcc66;
+    }
+}
+@media only screen and (min-width: 480px){
+    body{
+        background-color: #33ccff;
+    }
+}
+@media only screen and (min-width: 768px){
+    body{
+        background-color: #cc66ff;
+    }
+}
+@media only screen and (min-width: 1024px){
+    body{
+        background-color: #9933aa;
+    }
+}
+@media only screen and (min-width: 1200px){
+    body{
+        background-color: #000;
+    }
+    h1{
+        color:#fff;
+    }
+}
+*/

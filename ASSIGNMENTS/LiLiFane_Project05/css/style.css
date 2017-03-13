@@ -1,0 +1,40 @@
+/*body editing*/
+body{
+    margin: auto;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+h1{
+    font-family: 'Lobster Two', cursive;
+}
+/*p tag*/
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em ;
+}
+img{
+    width: 100%;
+    height: auto;
+
+}
+p, h1, h2, h3{
+    padding-left: 8.333333333%;
+    padding-right: 8.333333333%;
+}
+
+
+/*column split*/
+.col-sm-6{
+    padding-left: 0;
+    padding-right: 0;
+    width: 41.9%;
+    float: right;
+}
+.right{
+    margin-right: 2.777777778%;
+}
+.col-sm-6 p{
+    width: 100%;
+    height: auto
+}

@@ -1,0 +1,116 @@
+/*body editing*/
+body{
+    margin: auto;
+    padding: 0;
+
+}
+/*navegation bar edit*/
+#nav{
+    text-align:center;
+    font-size: 2.5em;
+    font-family: 'Lobster Two', cursive;
+    margin: 1em;
+}
+#nav li{
+    display: inline;
+}
+#nav a{
+    text-decoration: none;    
+}
+#nav li a{
+    color: gray;
+    text-decoration: none;
+    padding: 2.5%;
+}
+#nav li a:hover{
+    text-decoration: underline;
+    color: #B80000;
+    transition: color 1s ease-in-out;
+}
+/*end of editing navegation bar*/
+/*
+/*link editing*/
+.page{
+    background-color: #690095;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em;
+    margin-top: 5%;
+}
+.page a{
+    color: #ff8b00;
+}
+.page:hover,.page a:hover{
+    transition: color 1s ease-in-out;
+    color: white;
+}
+/*end of the link editing*/
+/*
+/*header and footer editing*/
+header h1{
+    font-size: 4em;
+    text-align: center;
+}
+header, footer {
+    padding: 2em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    margin: 0;
+}
+footer{
+    text-align: right;
+}
+/*end of header and footer editing*/
+/*
+/**/
+h2, h3{
+    font-size: 3em;
+}
+h1, h2, h3{
+    font-family: 'Lobster Two', cursive;
+}
+/*p tag*/
+p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em ;
+}
+h4{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em ;
+}
+
+/**/
+.first{
+    margin: 2% auto;
+    padding: 5px;
+}
+.first img{
+    margin-left: 10%;
+}
+.first p{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 40%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+
+}
+.image2{
+    margin: 1%;
+}
+.image2 img{
+    align-content: center;
+}
+.p2{
+    margin: auto;
+    padding: 2%;
+}
+.p2 p{
+    padding-left: 50px;
+}
+.full {
+    margin: auto;
+}
