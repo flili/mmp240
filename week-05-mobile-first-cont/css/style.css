@@ -65,6 +65,15 @@ p, h1, h2, h3{
     }
 }
 @media only screen and (max-width: 680px) {
+    nav {
+        width:100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    ul.top-nav li{
+        display: none;
+    }
     ul.top-nav.responsive {
         position:relative;
     }
@@ -80,5 +89,8 @@ p, h1, h2, h3{
     ul.top-nav.responsive li a{
         display: block;
         text-align: left;
+    }
+    h1{
+        margin-top: 2.5 em;
     }
 }
