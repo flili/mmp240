@@ -111,6 +111,9 @@ p, h1, h2, h3{
         width: 50px;
         height: 50px;
     }
+    ul top-nav.responsive logo{
+    width: 50px;
+}
 }
 .img-circle {
     border-radius: 50%;
@@ -118,4 +121,8 @@ p, h1, h2, h3{
 .col-sm-6 {
     display: inline-block;
     float: right;
+}
+col-sm-6 img.imga{
+    float: right;
+    margin: 0 0 10px 10px;
 }

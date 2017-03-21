@@ -1,0 +1,41 @@
+/*image scroll down*/
+.image { 
+	position: relative; 
+	width: 100%; /* for IE 6 */
+}
+p { 
+	position: absolute; 
+ 	top: 790px;
+ 	text-align: center;
+	left: 0; 
+	width: 100%;
+}
+@media only screen and (max-width: 640px) {
+	p span { 
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: white;
+		letter-spacing: -1px;  
+		background: rgb(0, 0, 0); /* fallback color */
+		background: rgba(0, 0, 0, 0.7);
+		padding: 10px; 
+	}
+	h2 span.spacer {
+		padding:0 5px;
+	}
+}
+/* the others in art text */
+h1{
+	font-family: 'Lobster Two', cursive;
+	font-size: 6em;
+	border: 6px solid #000;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding: 10px;
+}
+.info{
+	margin-top: 900px;
+}
+/*artits profile circle picture*/ 
+.img-circle {
+    border-radius: 50%;
+}
