@@ -1,0 +1,128 @@
+/*
+@font-face {
+    font-family: "AbrilFatface-Regular";
+    src: url("../fonts/Abril_Fatface/AbrilFatface-Regular.ttf");
+}*/
+
+body{
+    font-family: 'Roboto','Helvetica', sans-serif; 
+    /* background-color: #ccc;*/
+    font-size:18px;/* declared our default font size */
+    margin:0;
+    padding:0;
+    /* line-height:1.35em;*/
+    letter-spacing: 0.02em;
+    word-spacing: .15em;
+}
+
+h1{
+    font-size: 1.75em;/*31.5px*/
+    /*font-family: 'AbrilFatface-Regular';*/
+}
+
+/* em is a unit of measure that is proportional to 
+the base dimension for text */
+
+ul.top-nav {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #525252;
+}
+ul.top-nav li{
+    float:left;
+    margin:0 2.5% 0 5%;
+}
+ul.top-nav li.icon {
+    display: none;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+p, h1, h2, h3{
+    /*padding-left:30px; (30/360)*100 = 8.333333333333% */
+    padding-left: 8.333333333333%;
+    padding-right: 8.333333333333%;
+}
+
+/* column split into 2 */
+.col-sm-6{
+    width:48.611111111111%;/* 175 px */
+    float:left;
+}
+
+.right{
+    margin-right:2.777777777778%;
+}
+
+.col-sm-6 h2, .col-sm-6 p, .col-sm-6 h3{
+    padding-left: 17.142857142857%;/* (30/175)*100 = */
+    padding-right: 17.142857142857%;
+}
+
+
+@media only screen and (max-width: 680px) {
+    nav{
+        width:100%;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+    ul.top-nav li{
+        display: none;
+    }
+    ul.top-nav li.icon {
+        display: inline-block;
+        float: right;
+    }
+    ul.top-nav li a img{
+        width:auto;
+    }
+   ul.top-nav li:first-child{
+        display:block;
+    }
+    h1{
+        margin-top: 2.5em;   
+    }
+}
+@media only screen and (max-width: 680px) {
+    ul.top-nav.responsive {
+        position:relative;
+    }
+    ul.top-nav.responsive li.icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    ul.top-nav.responsive li{
+        float:none;
+        display: inline;
+    }
+    ul.top-nav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    ul.top-nav.responsive li:first-child{
+        display:none;
+        width: 50px;
+        height: 50px;
+    }
+    ul top-nav.responsive logo{
+    width: 50px;
+}
+}
+.img-circle {
+    border-radius: 50%;
+}
+.col-sm-6 {
+    display: inline-block;
+    float: right;
+}
+col-sm-6 img.imga{
+    float: right;
+    margin: 0 0 10px 10px;
+}

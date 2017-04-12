@@ -1,0 +1,236 @@
+/*navegation*/
+ul.top-nav {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #fff;
+}
+ul.top-nav li{
+    float:left;
+    margin:0 2.5% 0 5%;
+}
+ul.top-nav li.icon {
+    display: none;
+}
+@media only screen and (max-width: 680px) {
+    nav{
+        width:100%;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+    ul.top-nav li{
+        display: none;
+    }
+    ul.top-nav li.icon {
+        display: inline-block;
+        float: right;
+    }
+    ul.top-nav li a img{
+        width:auto;
+    }
+   ul.top-nav li:first-child{
+        display:block;
+    }
+    h1{
+        margin-top: 2.5em;   
+    }
+}
+/**/
+@media only screen and (max-width: 680px) {
+    ul.top-nav.responsive {
+        position:relative;
+    }
+    ul.top-nav.responsive li.icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    ul.top-nav.responsive li{
+        float:none;
+        display: inline;
+    }
+    ul.top-nav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    ul.top-nav.responsive li:first-child{
+        display:none;
+        width: 50px;
+        height: 50px;
+    }
+    ul top-nav.responsive logo{
+    width: 50px;
+}
+}
+/*image scroll down*/
+.image { 
+	position: relative; 
+	width: 100%; /* for IE 6 */
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.scroll p { 
+    position: absolute; 
+ 	top: 620px;
+ 	text-align: center;
+	left: 0; 
+	width: 100%;
+}
+h2{
+    font-family: 'Lobster Two', cursive;
+}
+@media only screen and (max-width: 640px) {
+	p span { 
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: white;
+		letter-spacing: -1px;  
+		background: rgb(0, 0, 0); /* fallback color */
+		background: rgba(0, 0, 0, 0.7);
+		padding: 10px; 
+	}
+	h2 span.spacer {
+		padding:0 5px;
+	}
+}
+/* the others in art text */
+h1{
+	font-family: 'Lobster Two', cursive;
+	font-size: 6em;
+	border: 6px solid #000;
+    margin-top: 100px;
+    margin-bottom: 200px;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding: 10px;
+}
+.info p{
+	padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 1.5em;
+}
+.info h2{
+    padding-top: 1px;
+    text-align: left;
+    font-size: 3em;
+}
+/*principal page image and text of artist*/
+.ima-text {
+    margin: auto;
+}
+.ima-text h2{
+    padding-top: 10px;
+    font-size: 3em;
+}
+.ima-text p{
+    padding-top: 5px;
+    font-size: 1.5em;
+    text-align: left
+}
+
+.ima-text2 p{
+    padding-top: 30px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text3 p{
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text4 p{
+    padding-top: 30px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text5 p{
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text6 p{
+    padding-top: 30px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text7 p{
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text8 p{
+    padding-top: 30px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text9 p{
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text10 p{
+    padding-top: 30px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.ima-text11 p{
+    padding-top: 30px;
+    font-size: 1.5em;
+    text-align: left;
+}
+/*page 2*/
+/*artits profile circle picture*/ 
+@media only screen and (max-width: 640px) {
+    }
+    .info-artist{
+        padding: 0;
+        padding-top: 70px;
+        background-color: #333;	
+    }
+    .info-artist .img-circle { 
+        padding-left: 20px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .info-artist h2{
+        padding-left: 30px;
+        font-family: 'Lobster Two', cursive;
+        font-size: 1.5em;
+        color: white;
+    }
+    .info-artist p{
+        padding: 30px;
+        font-size: 1.2em;
+        color: white;
+    }
+    .gallery h2{
+        text-align: center;
+    }
+    .gallery .slide{
+        width: 340px;
+    }
+    .gallery .gall1{
+        padding-top: 10px;
+        width: 200px;
+        float: left;
+    }
+    .gallery .gall2{
+        padding-top: 10px;
+        padding-left: 15px;
+        width: 120px;
+        float: left;
+    }
+.gallery .gall3{
+        padding-left: 15px;
+        width: 120px;
+        float: left;
+}
+.gallery .gall4 {
+        padding-left: 15px;
+        width: 200px;
+        float: left;
+}
