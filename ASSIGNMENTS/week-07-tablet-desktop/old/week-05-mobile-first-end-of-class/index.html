@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- responsive: meta tag viewport should make all of our site pages work on all devices and screen sizes -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mobile First | Media Queries</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- fonts from google -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> -->
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul class="top-nav" id="my-top-nav">
+                    <li><a class="active" href="#home">home</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()" >&#9776;</a></li>
+                </ul>
+            </nav>
+            <h1>Site Tag Line/Heading/What is this site about?!!!</h1>
+            <h2>Artist</h2>
+            <h3>Artist of the Month</h3>
+            <div>
+                <img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="place holder image">
+            </div><!-- end of image container -->
+            <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            
+            <h2>Artist</h2>
+            <h3>Artist of the Month</h3>
+            <div>
+                <img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="place holder image">
+            </div><!-- end of image container -->
+            <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            
+            <!-- column break divide into 2 -->
+            
+            <div class="col-sm-6 right">
+                <h2>Artist</h2>
+                <h3>Artist of the Month</h3>
+                <div>
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="place holder image">
+                </div><!-- end of image container -->
+                <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                </p>
+            </div><!-- end of content column -->
+            
+            <div class="col-sm-6">
+                <h2>Artist</h2>
+                <h3>Artist of the Month</h3>
+                <div>
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="place holder image">
+                </div><!-- end of image container -->
+                <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                </p>
+            </div><!-- end of content column -->
+        
+            
+        </div><!-- end of container -->
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("my-top-nav");
+                if (x.className === "top-nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "top-nav";
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
