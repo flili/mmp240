@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Introduction to JQuery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    
+    </head>
+    <body>
+        <div class="container clearfix">
+            <h1>Introduction to Jquery</h1>
+            <article class="content">
+                <h2>Getting Started</h2>
+                <p>jQuery is a JavaScript Library. It is built from javascript. jQuery greatly simplifies JavaScript programming by reducing the amount of code you need to write. It also comes with methods that you can easily use to select and add behaviours to user actions when on a web page. jQuery is easy to learn. And works on many browsers! Neat!</p>
+                <p>There are two ways we can add jQuery to our websites. We can download it from <a href="http://jquery.com/download/">jQuery.com</a>. We can download the uncompressed version to develop with it or we download the minified version to load on to the server. We would use the script tag and point to our file using src attribute. Another way is to use a cdn aka content delivery network like google. <a href="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">Here</a> is google's jquery cdn for current jQuery written at the time of that this page was written. Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</p>
+                <h2>Diving into the Syntax</h2>
+                <p>With jQuery you <strong>select</strong> (query) HTML elements and perform "actions" on them.</p>
+                <p>Basic syntax is:</p>
+                <pre>
+$(selector).action()</pre>
+                <p>First we use the dollar symbol $ to define and access jQuery. Then we select/find the thing we want to perform an action on. When we select elements in css we can select elements in varying ways. We can select by element, by class, by id, by attributes, by first child, last child, nth child, by values within an attribute, etc. </p>
+                <h2>The Document Ready Event</h2>
+                <p>All of our jquery methods are written inside of a document ready event.</p>
+                <pre>
+$(document).ready(function(){
+    // jQuery methods go here...
+});
+                </pre>
+                <p>We do this to prevent jquery from running code before the document is finished loading ie. is ready. It is good practice to wait for the document to be fully loaded and ready before working with it. Otherwise some methods can fail when these try to run and the document is not fully loaded.</p>
+                <p>You can also write the document ready event in shorthand. I don't recommend it as it is not as easy to read and or understand</p>
+                <pre>
+$(function(){
+   // jQuery methods go here...
+});
+                </pre>
+                <p>You can write scripts within the head of your web page or you can write separate .js files that you link to your pages. This allows you to link the same script code to multiple pages within your site or only run certain scripts on some pages while others are free of scripts or have other scripts linked to it to perform other events.</p>
+                <h2>Events</h2>
+                <p>All the different visitor's actions that a web page can respond to are called events. An event represents the precise moment when something happens. Such events include when a user moves his or her mouse over an element, they select a button and or click on an element.We use the term fired up often with events.</p>
+                <p><strong>DOM</strong> aka Document Object Model is a standard by which we access a document. With DOM HTML objects are treated as objects. The properties of all HTML elements can be defined via the DOM. We can use methods to access all HTML elements and we can also define actions to all html elements. In others the HTML DOM is a standard for how to get, change, add, or delete HTML elements.</p>
+                <p>Common DOM events include: click()/dblclick(), mouseenter()/mouseleave(), keydown()/keyup(), focus()/blur(), load(), resize(), etc.</p>
+                <h3>Click Function</h3>
+                <p id="click-function">This paragraph will hide with the click function and using <strong>this</strong> which will act on the thing that is selected when the user clicks.</p>
+                <h3>Double Click Function</h3>
+                <p id="highlight">The doubleclick function obviously expects a double click to perform an action. In this case we are making this paragraph a different color.</p>
+                <h3>Mousing Around</h3>
+                <img id="mouseover" src="https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg" alt="kitten image" width="200px">
+                <img id="mousebegone" src="https://s-media-cache-ak0.pinimg.com/originals/90/ae/3f/90ae3f98f7c894b47b8e036e4646a573.jpg" alt="kitten image" height="200px">
+                <img id="mousedown"src="http://decocurbs.com/wp-content/uploads/2016/11/cute-mouse-funny-hat-hd-wallpaper.jpg" alt="cute-mouse-image" height="200px">
+                <img id="hovering" src="https://www.inspiringwallpapers.net/content/uploads/cute-kitten-on-bed.jpg" alt="kitty in bed" height="200px">
+                <h3>Hide, Show, and Toggle</h3>
+                <button class="button" id="hide">Hide</button>
+                <button class="button" id="show">Show</button>
+                <button class="button" id="toggle">Toggle</button>
+                <p class="test">Hide Me!/Show me!</p>
+                <h3>Fade In and Out</h3>
+                <button class="button" id="fading">Click to fade in boxes</button><br><br><br>
+                <div id="div1" style="width:30%;height:80px;display:none;background-color:#01b6c5;"></div><br>
+                <div id="div2" style="width:30%;height:80px;display:none;background-color:#02726b;"></div><br>
+                <div id="div3" style="width:30%;height:80px;display:none;background-color:#e50211;"></div>
+                <h3>Fade To</h3>
+                <button class="button" id="fadeto">Click to fade in boxes</button><br><br><br>
+                <div id="div4" style="width:30%;height:80px;display:none;background-color:#01b6c5;"></div><br>
+                <div id="div5" style="width:30%;height:80px;display:none;background-color:#02726b;"></div><br>
+                <div id="div6" style="width:30%;height:80px;display:none;background-color:#e50211;"></div>
+                <h3>Slide Down, Up, and Toggle</h3>
+                <div id="flip">Click to slide the panel down or up</div>
+                <div id="panel">Why Hello!</div>
+                <h3>Animating with jQuery</h3>
+                <button class="button" id="animate-btn">Animate the Dancing Box Below</button>
+                <p>Remember that by default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute! </p>
+                <div id="dancing-box" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+               
+                <br><br><br><br>
+                <h3>Chaining Methods</h3>
+                <p id="fun-jQuery">jQuery is fun!!!</p>
+                <button class="button" id="chaining">Click me and watch what happens!</button>
+            </article>
+        </div><!-- end of container -->
+                <!-- javascript/jquery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+        </script>
+        <script src="js/jquery.js"></script>
+    </body>
+</html>
