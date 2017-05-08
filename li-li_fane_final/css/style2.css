@@ -1,0 +1,56 @@
+img{
+    width: 100%;
+}
+
+/*page 2*/
+/*artits profile circle picture*/ 
+@media only screen and (max-width: 640px) {
+    .info-artist{
+        padding: 0;
+        padding-top: 70px;
+        background-color: #6633ff;	
+    }
+    .img-circle { 
+        margin-left: 20px;
+        width: 50%;
+        border-radius: 50%;
+    }
+    .info-artist h2{
+        padding-left: 30px;
+        font-family: 'Lobster Two', cursive;
+        font-size: 1.5em;
+        color: white;
+    }
+    .info-artist p{
+        padding: 30px;
+        font-size: 1.2em;
+        color: white;
+    }
+    .gallery h2{
+        text-align: center;
+    }
+    .gallery .slide{
+        width: 340px;
+    }
+    .gallery .gall1{
+        padding-top: 10px;
+        width: 200px;
+        float: left;
+    }
+    .gallery .gall2{
+        padding-top: 10px;
+        padding-left: 15px;
+        width: 120px;
+        float: left;
+    }
+    .gallery .gall3{
+        padding-left: 15px;
+        width: 120px;
+        float: left;
+    }
+    .gallery .gall4 {
+        padding-left: 15px;
+        width: 200px;
+        float: left;
+    }
+}

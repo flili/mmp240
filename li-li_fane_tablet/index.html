@@ -7,6 +7,7 @@
         <title>The Others In Art</title>
 <!--Stylesheet-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/slide-style.css">
         
 <!-- fonts from google -->
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
@@ -28,50 +29,59 @@
             </nav>
 <!-- image first to scroll down -->
        <div class="scroll">
-            <h1 class="solid">The<br>Others<br>In<br>Art</h1>
-            <p><span>Scroll down</span></p>
+            <div class="carousel-outer">
+                <a href="#" class="previous">Prev</a>
+                <div class="carousel-inner">
+                    <img src="images/slide.jpg" alt="red" class="img-show">
+                </div><!-- end of inner carousel -->
+                <a href="#" class="next">Next</a>
+                <a href="#" class="pp">play/pause</a>
+            </div><!-- end of outer carousel -->
         </div>
         <div class="info">
             <h2>The Others In Art</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere efficitur pharetra. Vestibulum magna diam, lobortis eget massa eu, tincidunt pulvinar libero. Aenean diam odio, imperdiet a aliquet at, elementum vel nulla. Phasellus dignissim, velit eget tristique hendrerit, lorem odio lacinia risus, non tempus ligula nunc vitae nunc.</p>
         </div>
+        <div class="info">
         <h2>Our Artists</h2>
-        <div class="ima-text">
+        <div class="ima-text2">
             <img class="image-responsive" src="images/adjaye1.jpg" alt="artist" /><p class="image-caption">Duis lacinia placerat ligula a laoreet.</p>
         </div>
         <div class="ima-text">
             <img class="image-responsive" src="images/aiweiwei.jpg" alt="artist" /><p class="image-caption">Duis lacinia placerat ligula a laoreet.</p>
         </div>
-        <div class="ima-text">
+        <div class="ima-text2">
             <img src="images/almathomas.jpg" alt="artist" /><p>Duis lacinia placerat ligula a laoreet.</p>
         </div>
         <div class="ima-text">
-            <img width="175" alt="artist" /><br><p>Duis lacinia placerat ligula a laoreet.</p>
+            <img src="images/ana-mendieta1.jpg" alt="artist" /><br><p>Duis lacinia placerat ligula a laoreet.</p>
         </div>
-        <div class="ima-text">
+        <div class="ima-text2">
             <img  src="images/burks1.jpg" alt="artist" /><br><p>Duis lacinia placerat ligula a laoreet.</p>
         </div>   
         <div class="ima-text">
             <img src="images/carrie1.jpg" alt="artist" /><br><p>Duis lacinia placerat ligula a laoreet. </p>
         </div>
-        <div class="ima-text">
+        <div class="ima-text2">
             <img src="images/chris.jpg" alt="artist" /><br><p>Duis lacinia placerat ligula a laoreet. </p>
         </div>
         <div class="ima-text">
             <p><img src="images/jacob-lawrence1.jpg" alt="artist"  /><br>Duis lacinia placerat ligula a laoreet.</p>
         </div>
-        <div class="ima-text">
+        <div class="ima-text2">
             <p><img src="images/kara-walker.jpg"  alt="artist" /><br>Duis lacinia placerat ligula a laoreet. </p>
         </div>
         <div class="ima-text">
             <p><a href="artist.html"><img src="images/Lam.jpg" alt="artist"/></a><br>Duis lacinia placerat ligula a laoreet.</p>
         </div>
-        <div class="ima-text">
+        <div class="ima-text2">
             <p><img src="images/Wangechi-Mutu.jpg" alt="artist" /><br>Duis lacinia placerat ligula a laoreet.</p>
         </div>   
-        
+            </div>
         </div>
 <!--end body tag-->
-        
+        <!-- javascript/jquery -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/slide-auto.js"></script>
     </body>
 </html>

@@ -1,0 +1,17 @@
+/* variables */
+
+$font-stack: 'Roboto', sans-serif;
+$font-size:18px;
+$bg-col-white-trans: rgba(255,255,255, 0.85);
+$zero-fluff:0px;
+$no-show: none;
+$show-me-in:inline-block;
+$full-width:100%;
+$margin-tip-1: 2.5%;
+
+/*  
+$margin-tip-2: ( ($margin-tip-1/100) * 2)*100; 
+*/
+$margin-tip-2: $margin-tip-1 * 2;
+$link-color: #000;
+    
