@@ -26,31 +26,4 @@ img{
         font-size: 1.2em;
         color: white;
     }
-    .gallery h2{
-        text-align: center;
-    }
-    .gallery .slide{
-        width: 340px;
-    }
-    .gallery .gall1{
-        padding-top: 10px;
-        width: 200px;
-        float: left;
-    }
-    .gallery .gall2{
-        padding-top: 10px;
-        padding-left: 15px;
-        width: 120px;
-        float: left;
-    }
-    .gallery .gall3{
-        padding-left: 15px;
-        width: 120px;
-        float: left;
-    }
-    .gallery .gall4 {
-        padding-left: 15px;
-        width: 200px;
-        float: left;
-    }
 }

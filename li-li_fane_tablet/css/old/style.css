@@ -3,7 +3,9 @@
     font-family: "AbrilFatface-Regular";
     src: url("../fonts/Abril_Fatface/AbrilFatface-Regular.ttf");
 }*/
-
+img{
+    width: 100%;
+}
 body{
     font-family: 'Roboto','Helvetica', sans-serif; 
     /* background-color: #ccc;*/
