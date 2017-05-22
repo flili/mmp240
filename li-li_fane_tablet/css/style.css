@@ -27,6 +27,7 @@ ul.top-nav {
     position: absolute;
     top: 0px;
     width: 100%;
+
 }
 
 ul.top-nav li {
@@ -244,6 +245,9 @@ body {
         width: 100%;
         bottom: 92%;
     }
+    .icon {
+        display: none;
+    }
 }
 @media only screen and (min-width:1025px){
     .ima-text{
@@ -286,4 +290,35 @@ body {
     .contact{
         margin-top: 5%;
     }
+    .icon {
+        display: none;
+    }
+}
+/*page 2*/
+@media only screen and (min-width:1025px) {
+.info-artist{
+        padding: 0;
+        padding-top: 70px;
+        background-color: #333;	
+    }
+    .info-artist .img-circle { 
+        padding-left: 20px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .info-artist h2{
+        padding-left: 30px;
+        font-size: 1.5em;
+        color: white;
+    }
+    .info-artist p{
+        font-family: 'Open Sans Condensed', sans-serif;
+        padding: 30px;
+        font-size: 1.2em;
+        color: white;
+    }
+    p{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1em;
+}
 }
