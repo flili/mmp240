@@ -2,47 +2,104 @@
 /*  
 $margin-tip-2: ( ($margin-tip-1/100) * 2)*100; 
 */
-
-    img{
-        width: 100%;
+/* image full size and fixed*/
+img{
+    width: 100%;
+}
+h1,h2,h3{
+     font-family: 'Passion One', cursive;
+    color: #6633ff;
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 /* navigation */
+.logo{
+     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 10em;
+    
+}
 ul.top-nav {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  background-color: rgba(255, 255, 255, 0.85);
-  position: fixed;
-  top: 0px;
-  width: 100%;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0px;
+    background-color: #6633ff;
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
 
 ul.top-nav li {
-  float: left;
-  margin: 0 2.5% 5%;
+    float: left;
+    margin: 0 2.5% 5%;
 }
 
 ul.top-nav li a {
-  color: #000;
-  padding: 5%;
-  text-decoration: none;
-  font-size: 19.8px;
-  transition: 1.0s;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    padding: 5%;
+    text-decoration: none;
+    font-size: 19.8px;
+    transition: 1.0s;
 }
+ul.top-nav li .logo{
+    font-family: 'Passion One', cursive;
+    font-size: 2em;
+    }
 .info{
         width: 100%;
     }
+/*about page*/
+.about{
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.about h1{
+    font-size: 2em;
+}
+.about p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/*contact page*/
+.contact{
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.contact h1{
+    font-size: 2em;
+}
+.contact p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 @media screen and (max-width: 680px) {
-  ul.top-nav li:not(:first-child) {
+    ul.top-nav {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0px;
+    background-color: #6633ff;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+    
+    ul.top-nav li .logo{
+        margin: 10%;
+    }
+    ul.top-nav li:not(:first-child) {
     display: none;
   }
   ul.top-nav li.icon {
     display: inline-block;
     float: right;
-    margin: 5%;
+    margin: 2%;
   }
   ul.top-nav.responsive {
-    position: relative;
+    position: absolute;
+      padding: 0%;
   }
   ul.top-nav.responsive li.icon {
     position: absolute;
@@ -52,10 +109,12 @@ ul.top-nav li a {
   ul.top-nav.responsive li {
     float: none;
     display: inline;
+      padding: 0%;
+      margin: 0%;
   }
   ul.top-nav.responsive li a {
     display: block;
-    text-align: left;
+    text-align: center;
   }
   ul.top-nav.responsive li:first-child {
     display: none;
@@ -63,12 +122,16 @@ ul.top-nav li a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
 }
 /*page 2*/
 /*artits profile circle picture*/ 
 @media only screen and (max-width: 640px) {
+    ul.top-nav li .logo{
+    font-family: 'Passion One', cursive;
+    font-size: 2em;
+    }
     .info-artist{
         padding: 0;
         padding-top: 70px;
@@ -81,12 +144,11 @@ body {
     }
     .info-artist h2{
         padding-left: 30px;
-        font-family: 'Lobster Two', cursive;
         font-size: 1.5em;
         color: white;
     }
     .info-artist p{
-    font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
         padding: 30px;
         font-size: 1.2em;
         color: white;
@@ -105,17 +167,22 @@ body {
         width: 20%;
     }
     .ima-text{
-        border-bottom: solid 3px;
-        border-color: black;
+        border-bottom: solid 1px;
+        border-color: #6633ff;
     }
 }
 
 @media only screen and (min-width:681px) and (max-width:1024px) {
-    
+    .about{
+        margin-top: 10%;
+    }
+    .contact{
+        margin-top: 10%;
+    }
     .ima-text{
         width: 50%;
         border-bottom: solid 3px;
-        border-color: black;
+        border-color: #6633ff;
         float: left;
     }
     .ima-text img{ 
@@ -127,9 +194,56 @@ body {
     .image-caption a{
         font-size: 0.8em;
     }
-    
+    ul.top-nav {
+        list-style-type: none;
+        margin: 0%;
+        padding: %;
+        background-color: #6633ff;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        bottom: 92%;
+    }
 }
 @media only screen and (min-width:1025px){
-
-
+    .ima-text{
+        width: 30%;
+        border-bottom: solid 3px;
+        border-color: #6633ff;
+        float: left;
+    }
+    .info, .info1{
+        padding-left: 10%;
+    }
+    .info1{
+        margin-top: 0%;
+    }
+    .ima-text img{ 
+        width: 300px;
+    }
+    .ima-text .image-caption{
+        text-align: left;
+    }
+    .image-caption a{
+        font-size: 0.8em;
+    }
+    ul.top-nav {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        background-color: #6633ff;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        bottom: 92%;
+    }
+    ul.top-nav li{
+        padding: 1%;
+    }
+    .about{
+        margin-top: 5%;
+    }
+    .contact{
+        margin-top: 5%;
+    }
 }

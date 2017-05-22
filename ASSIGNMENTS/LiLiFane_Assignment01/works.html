@@ -20,19 +20,14 @@
 <!-- Navegation Bar -->
             <nav>
                 <ul class="top-nav" id="my-top-nav">
-                    <li><a class="logo" href="index.html">ART</a></li>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="logo" href="index.html"><img src="images/logo2.jpg" alt="logo"></a></li>
+                    <li><a class="active" href="#home">home</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
                     <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()" >&#9776;</a></li>
                 </ul>
             </nav>
-            
-            <div class="info1">
-            <h2>The Others In Art</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere efficitur pharetra. Vestibulum magna diam, lobortis eget massa eu, tincidunt pulvinar libero. Aenean diam odio, imperdiet a aliquet at, elementum vel nulla. Phasellus dignissim, velit eget tristique hendrerit, lorem odio lacinia risus, non tempus ligula nunc vitae nunc.</p>
-        </div>
 <!-- image first to scroll down -->
        <div class="scroll">
             <div class="carousel-outer">
@@ -44,7 +39,10 @@
                 <a href="#" class="next">Next</a>
             </div><!-- end of outer carousel -->
         </div>
-        
+        <div class="info">
+            <h2>The Others In Art</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere efficitur pharetra. Vestibulum magna diam, lobortis eget massa eu, tincidunt pulvinar libero. Aenean diam odio, imperdiet a aliquet at, elementum vel nulla. Phasellus dignissim, velit eget tristique hendrerit, lorem odio lacinia risus, non tempus ligula nunc vitae nunc.</p>
+        </div>
         <div class="info">
         <h2>Our Artists</h2>
         <div class="ima-text">
@@ -75,7 +73,7 @@
             <img src="images/kara-walker.jpg" alt="artist" /><p class="image-caption">Kara Walker <a href="#">More info.</a></p>
         </div>
         <div class="ima-text">
-            <img src="images/Lam.jpg" alt="artist" /><p class="image-caption">Wilfredo Lam <a href="artist.html">More info.</a></p>
+            <img src="images/Lam.jpg" alt="artist" /><p class="image-caption">Wilfredo Lam <a href="#">More info.</a></p>
         </div> 
         <div class="ima-text">
             <img src="images/Wangechi-Mutu.jpg" alt="artist" /><p class="image-caption">Wangechi Mutu <a href="#">More info.</a></p>
@@ -87,15 +85,6 @@
         <!-- javascript/jquery -->
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/slide-auto.js"></script>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("my-top-nav");
-                if (x.className === "top-nav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "top-nav";
-                }
-            }
-        </script>
     </body>
+</html>
 </html>
