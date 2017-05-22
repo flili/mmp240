@@ -25,8 +25,9 @@ ul.top-nav {
     padding: 0px;
     background-color: #6633ff;
     position: absolute;
-    top: 0px;
+    top: 0%;
     width: 100%;
+    bottom: 95%;
 }
 
 ul.top-nav li {
@@ -202,7 +203,7 @@ body {
         float: right;
     }
     .ima-text{
-        width: 100%;
+        width: 50%;
     }
     .ima-text img{ 
         width: 20%;
@@ -243,6 +244,9 @@ body {
         top: 0%;
         width: 100%;
         bottom: 92%;
+    }
+    .icon {
+        display: none;
     }
 }
 @media only screen and (min-width:1025px){
@@ -285,5 +289,49 @@ body {
     }
     .contact{
         margin-top: 5%;
+    }
+    .icon {
+        display: none:
+    }
+}
+/*page 2*/
+@media only screen and (min-width:1025px) {
+.info-artist{
+        padding: 0;
+        padding-top: 70px;
+        background-color: #333;	
+    }
+    .info-artist .img-circle { 
+        padding-left: 20px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .info-artist h2{
+        padding-left: 30px;
+        font-size: 1.5em;
+        color: white;
+    }
+    .info-artist p{
+        font-family: 'Open Sans Condensed', sans-serif;
+        padding: 30px;
+        font-size: 1.2em;
+        color: white;
+    }
+    p{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1em;
+    }
+    .ima-text .image-caption{
+        float: right;
+    }
+    .ima-text{
+        width: 70%;
+    }
+    .ima-text img{ 
+        width: 50%;
+    }
+    .ima-text{
+        border-bottom: solid 1px;
+        border-color: #6633ff;
     }
 }
